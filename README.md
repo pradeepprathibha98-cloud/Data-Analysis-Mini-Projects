@@ -1,32 +1,72 @@
-# Business & Data Analysis Toolkit
+# Python Data Analysis Mini Projects
 
-[![Python](https://img.shields.io/badge/Python-3.9%2B-blue.svg)](https://www.python.org/)
-[![Libraries](https://img.shields.io/badge/Libraries-NumPy%20%7C%20Pandas%20%7C%20Matplotlib%20%7C%20Seaborn-orange.svg)](https://github.com/pradeepprathibha98-cloud/ML_mini_projects)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Python](https://img.shields.io/badge/Python-3-blue.svg)](https://www.python.org/)
+[![NumPy](https://img.shields.io/badge/NumPy-arrays-013243.svg)](https://numpy.org/)
+[![Pandas](https://img.shields.io/badge/Pandas-data%20analysis-150458.svg)](https://pandas.pydata.org/)
 
-A modular Python toolkit showcasing core numerical array computations, vectorized data processing, metric aggregation, and customer behavioral modeling.
+A collection of small Python exercises in numerical computing, data manipulation, customer segmentation, and visualization. These projects are intended for learning and demonstration; they are not production systems or financial tools.
 
----
+## Projects
 
-## 📌 Project Overview
+| Project | What it demonstrates | Data / behavior |
+| --- | --- | --- |
+| `RFM_Engine.py` | Aggregates Recency, Frequency, and Monetary metrics, assigns quantile scores, and creates simple customer segments. | Generates random transaction data in memory; no external dataset is required. |
+| `Stock_market_tracker.py` | NumPy broadcasting, filtering, aggregation, reshaping, and index operations. | Uses fixed sample arrays; it does not retrieve live stock prices. |
+| `build-pd.py` | Basic Pandas data loading, type conversion, duplicate removal, and tabular output. | Reads `pokemon.csv` from the project directory. |
+| `mtplb.py` | Matplotlib charting practice and data preparation with NumPy and Pandas. | Reads `pokemon.csv`; most plotting examples are currently commented out. |
+| `sbrn.py` | Seaborn pair-plot visualization using sample datasets. | Loads Seaborn sample datasets, which may require an internet connection. |
 
-This repository demonstrates practical data engineering and analytical patterns:
-- **Vectorized Numerical Computing:** High-performance array broadcasting, matrix slicing, and multi-dimensional reshaping using **NumPy**.
-- **Data Wrangling & Pipeline Cleanliness:** Schema structuring, aggregations, and cleaning pipelines using **Pandas**.
-- **Customer Lifecycle Analytics:** Recency, Frequency, and Monetary (RFM) behavioral segmentation algorithms.
-- **Exploratory Data Analysis (EDA):** Visualizing distributions, metric trends, and cohort patterns via **Matplotlib** and **Seaborn**.
+## Getting started
 
----
+Use Python 3 with `pip`. From the project directory, create and activate a virtual environment, then install the libraries used by the examples:
 
-## 📂 Project Structure
+```bash
+python -m venv .venv
+```
+
+Windows PowerShell:
+
+```powershell
+.\.venv\Scripts\Activate.ps1
+```
+
+macOS / Linux:
+
+```bash
+source .venv/bin/activate
+```
+
+Install dependencies:
+
+```bash
+python -m pip install numpy pandas matplotlib seaborn
+```
+
+Run an example from the project directory:
+
+```bash
+python RFM_Engine.py
+python Stock_market_tracker.py
+python build-pd.py
+python mtplb.py
+python sbrn.py
+```
+
+The CSV-reading scripts expect `pokemon.csv` in the current project directory. `employees.csv` and `data.json` are additional sample files and are not currently used by the active scripts. The Seaborn example downloads its sample datasets when they are not already cached.
+
+## Repository contents
 
 ```text
-ML_mini_projects/
-│
-├── RFM_Engine.py             # RFM customer segmentation and quantile aggregation engine
-├── Stock_market_tracker.py   # Vectorized financial filtering, thresholds, and market trend tracking
-├── build-pd.py               # Pandas pipeline routines and data cleaning scripts
-├── mtplb.py                  # Matplotlib visual charting scripts
-├── sbrn.py                   # Seaborn statistical distribution plotting
-├── requirements.txt          # Python dependencies
-└── README.md                 # Project documentation
+.
+├── RFM_Engine.py
+├── Stock_market_tracker.py
+├── build-pd.py
+├── mtplb.py
+├── sbrn.py
+├── pokemon.csv
+├── employees.csv
+├── data.json
+└── README.md
+```
+
+**Repository note:** `build-pd.py`, `mtplb.py`, `sbrn.py`, and the sample data files are currently ignored by Git in this working copy. They will not appear in a clone until the ignore rules are updated and the files are added to the repository.

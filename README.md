@@ -11,9 +11,9 @@ This repository contains small, hands-on projects developed while learning Pytho
 
 | Notebook | Overview | Data and scope |
 | --- | --- | --- |
-| [Cutomer Segmentation.ipynb](./Customer Segmentaation.ipynb) | Creates sample transactions, calculates Recency, Frequency, and Monetary metrics, assigns quartile scores, and groups customers into simple segments. | Generates random transaction data in the notebook; no external dataset is needed. |
-| [Numpy Stocks Analysis.ipynb](./Numpy Stocks Analysis.ipynb) | Practices NumPy broadcasting, filtering, aggregation, reshaping, and finding maximum values using sample stock-price and sales arrays. | Uses values defined in the notebook; it does not fetch live market data or provide investment advice. |
-| [Housing Data Analysis.ipynb](./Housing Data Analysis.ipynb) | Cleans and explores Bengaluru housing data, engineers features, handles location categories, and filters several types of outliers. | Requires `Bengaluru_House_Data.csv` in the project root. The dataset is not included in this repository. |
+| [Customer Segmentation](./Customer%20Segmentation.ipynb) | Creates sample transactions, calculates Recency, Frequency, and Monetary metrics, assigns quartile scores, and groups customers into simple segments. | Generates random transaction data in the notebook; no external dataset is needed. |
+| [NumPy Stocks Analysis](./Numpy%20Stocks%20Analysis.ipynb) | Practices NumPy broadcasting, filtering, aggregation, reshaping, and finding maximum values using sample stock-price and sales arrays. | Uses values defined in the notebook; it does not fetch live market data or provide investment advice. |
+| [Housing Data Analysis](./Housing%20Data%20Analysis.ipynb) | Cleans and explores Bengaluru housing data, engineers features, handles location categories, and filters several types of outliers. | Requires `Bengaluru_House_Data.csv` in the project root. The dataset is not included in this repository. |
 
 ## Getting started
 
@@ -22,8 +22,8 @@ You will need Python 3 and Jupyter Notebook (or an editor that supports `.ipynb`
 1. Clone the repository and move into its directory:
 
    ```bash
-   git clone https://github.com/pradeepprathibha98-cloud/Data-Analysis-Toolkit.git
-   cd Data-Analysis-Toolkit
+   git clone https://github.com/pradeepprathibha98-cloud/Data-Analysis-Mini-Projects.git
+   cd Data-Analysis-Mini-Projects
    ```
 
 2. Create and activate a virtual environment:
@@ -66,10 +66,7 @@ The RFM and stock-market notebooks can be run with their built-in sample data. T
 ├── Customer Segmentation.ipynb
 ├── Housing Data Analysis.ipynb
 ├── Numpy Stocks Analysis.ipynb
-├── __pycache__/
-│   ├── sbrn.cpython-314.pyc
-│   └── seaborn.cpython-314.pyc
 └── README.md
 ```
 
-The `__pycache__` files are compiled Python artifacts already tracked in the repository; they are not needed to run the notebooks. The notebooks are educational exercises. In particular, the stock-market notebook uses illustrative arrays, and the housing notebook performs data preparation and exploration rather than training a complete price-prediction model.
+The notebooks are educational exercises. In particular, the stock-market notebook uses illustrative arrays, and the housing notebook performs data preparation and exploration rather than training a complete price-prediction model.

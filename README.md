@@ -13,7 +13,7 @@ This repository contains small, hands-on projects developed while learning Pytho
 | --- | --- | --- |
 | [Customer Segmentation](./Customer%20Segmentation.ipynb) | Creates sample transactions, calculates Recency, Frequency, and Monetary metrics, assigns quartile scores, and groups customers into simple segments. | Generates random transaction data in the notebook; no external dataset is needed. |
 | [NumPy Stocks Analysis](./Numpy%20Stocks%20Analysis.ipynb) | Practices NumPy broadcasting, filtering, aggregation, reshaping, and finding maximum values using sample stock-price and sales arrays. | Uses values defined in the notebook; it does not fetch live market data or provide investment advice. |
-| [Housing Data Analysis](./Housing%20Data%20Analysis.ipynb) | Cleans and explores Bengaluru housing data, engineers features, handles location categories, and filters several types of outliers. | Requires `Bengaluru_House_Data.csv` in the project root. The dataset is not included in this repository. |
+| [Housing Data Analysis](./Housing%20Data%20Analysis.ipynb) | Cleans and explores Bengaluru housing data, engineers features, handles location categories, and filters several types of outliers. | Uses the included [`Bengaluru_House_Data.csv`](./Bengaluru_House_Data.csv) dataset. |
 
 ## Getting started
 
@@ -56,13 +56,14 @@ You will need Python 3 and Jupyter Notebook (or an editor that supports `.ipynb`
    jupyter notebook
    ```
 
-The RFM and stock-market notebooks can be run with their built-in sample data. To run the housing notebook, place a compatible `Bengaluru_House_Data.csv` file in the project root first; the notebook reads it using that filename.
+The RFM and stock-market notebooks can be run with their built-in sample data. The housing notebook reads the included `Bengaluru_House_Data.csv` file from the project root.
 
 ## Repository structure
 
 ```text
 .
 ├── .gitignore
+├── Bengaluru_House_Data.csv
 ├── Customer Segmentation.ipynb
 ├── Housing Data Analysis.ipynb
 ├── Numpy Stocks Analysis.ipynb
